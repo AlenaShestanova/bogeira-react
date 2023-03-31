@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Pragmatica';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Pragmatica-Light.ttf') format('truetype'),
+  url('../fonts/Pragmatica-LightOblique.woff2') format('woff2'),
+  url('../fonts/Pragmatica-Light.woff') format('woff'),
+  url('../fonts/Pragmatica-Light.eot') format('eot')
+}
+
+body {
+  font-family: Pragmatica, sans-serif;
+  margin: 16px;
+}

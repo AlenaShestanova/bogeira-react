@@ -1,0 +1,53 @@
+@import "../../assets/styles/constants";
+
+.header {
+  display: flex;
+  margin-bottom: 16px;
+
+  .logoContainer {
+    max-height: 34px;
+    width: 50%;
+
+    .logoIcon {
+      //visibility: hidden;
+      height: 34px;
+      margin-right: 10px;
+      max-height: 34px;
+    }
+
+    .logoBogeira {
+      height: 25px;
+    }
+
+  }
+
+
+  .navContainer {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    width: 50%;
+
+    a {
+      margin-right: 24px;
+      text-decoration: none;
+      color: $grayText;
+      font-weight: 400;
+    }
+  }
+
+  .langChangeContainer {
+    color: $grayText;
+    margin-left: auto;
+
+    button {
+      color: $grayText;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+}
+

@@ -1,0 +1,10 @@
+@import "../../assets/styles/constants";
+
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  color: $lightGrayText;
+  width: calc(50% - 32px);
+  bottom: 16px;
+}
