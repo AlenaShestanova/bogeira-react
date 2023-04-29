@@ -9,10 +9,13 @@ const About = props => {
 
   return (
     <div className={classes.aboutContainer}>
-      <span className={classes.name}>{WHY_BOGEIRA_TEXT}</span>
-      <p>{BOGEIRA_INFO_TEXT}</p>
-      <span className={classes.photo}>{PHOTO_AUTHOR_TEXT}</span>
-      <FactsRender facts={FACT_LIST} />
+      <div className={classes.info}>
+        <span className={classes.name}>{WHY_BOGEIRA_TEXT}</span>
+        <p>{BOGEIRA_INFO_TEXT}</p>
+        <span className={classes.photo}>{PHOTO_AUTHOR_TEXT}</span>
+        <FactsRender facts={FACT_LIST} />
+      </div>
+      <div className={classes.iraPhoto} />
     </div>
   );
 };

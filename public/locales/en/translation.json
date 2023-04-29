@@ -7,43 +7,43 @@
     "contacts": "contacts"
   },
   "about": {
-    "why_bogeira": "Меня зовут Ирина Боголюбова. Я — художник-ювелир. Bogeira — мой творческий псевдоним.",
-    "bogeira_info": "Для меня ювелирные украшения - это скульптурная пластика, объем, вписанный в пространство человеческого тела. Это — разговор об ощущениях, тактильности, прикосновениях. Я очень люблю работать с формой вручную, часто она ассиметрична и её очертания не повторяются с разных ракурсов. В моем понимании, независимо от размера, изделие должно быть максимально кайфовым и комфортным при носке. Что касается материала, сейчас я много работаю с нержавеющей сталью в сочетании с горячей эмалью.",
-    "photo_author": "Фото: Пим Звир",
+    "why_bogeira": "My name is Irina Bogolyubova and I am a jewelry artist. My creative alias is Bogeira.",
+    "bogeira_info": "To my mind, a jewelry art piece is a sculptural form fitted into environment of a human body. It is a story about sense, tactility and feeling. I prefer making handiwork, I love creating non-symmetric pieces. It is my understanding that a jewelry should be extremely comfortable and feel-good despite of the size. Now I work mostly in stainless steel and stoving enamel.",
+    "photo_author": "Photo - Pim Zwier",
     "fact_list": [
       {
-        "label": "образование",
+        "label": "education",
         "description_item_list": [
-          "2017 – 2021 - СПБГХПА имени А. Л. Штиглица, художественная обработка металла, пластика малых форм.",
-          "2012 – 2014 - ГАПОУ «Казанский техникум народных художественных промыслов»",
-          "2010 – 2015 -  ФГАОУ ВО «Казанский (Приволжский) федеральный университет», перевод и переводоведение.",
-          "2007 – 2010 - ГАПОУ «Казанский медицинский колледж», стоматология ортопедическая."
+          "2017 - 2021 – Saint Petersburg Stieglitz State Academy of Art and Design, Metal Art department.",
+          "2012 - 2014 – Kazan State Technical School of Arts and Crafts, Jewelry department.",
+          "2010 - 2015 - Kazan Federal University, Translation and Interpretation Studies department.",
+          "2007 - 2010 - Kazan State Medical School, Dentistry department."
         ]
       },
       {
-        "label": "избранные достижения",
+        "label": "exhibitions",
         "description_item_list": [
-          "2021 - Выставка предметов дизайна в рамках проекта «Отлично. Топ 100 выпускников дизайнеров», Москва, Россия.",
-          "2021 - Лауреат международного конкурса ювелирного дизайна «Образ и форма», II место в номинации «Производство», категория «Ювелирное изделие», Санкт-Петербург, Россия.",
-          "2019 - IV Международная биеннале искусства горячей эмали «Золотая нить - дорога творчества», Санкт Петербург, Россия.",
-          "2019 - Межвузовская выставка «Портрет. Не только сходство», Санкт-Петербург, Россия.",
-          "2018 - Лауреат международного конкурса «Все Краски Мира» в рамках проекта «Мы разные. Мы вместе», I место в номинации: рисунок, Санкт-Петербург, Казань."
+          "2021 - 100BestDesign exhibition, as a part of project “100 Best Graduate Designers”, Moscow, Russia.",
+          "2021 - Finalist of the international jewelry design competition “Image and Shape” in the category “Jewelry Piece. Manufacturing”, Saint-Petersburg, Russia.",
+          "2019 - IV International Biennale of stoving enamel art “Golden Thread – Artistic Line”, Saint-Petersburg, Russia.",
+          "2019 - Portrait. Beyond Similarity - Interacademic exhibition, Saint-Petersburg, Russia.",
+          "2018 - Winner of the international competition “Colours of the World” as a part of project “We’re distinct. We’re combined” in the category “Drawings”, Saint-Petersburg, Russia."
         ]
       },
       {
-        "label": "живопись"
+        "label": "painting"
       },
       {
-        "label": "проектирование"
+        "label": "projects"
       },
       {
-        "label": "рисунок"
+        "label": "drawing"
       },
       {
-        "label": "скульптура"
+        "label": "sculpture"
       },
       {
-        "label": "графика"
+        "label": "graphics"
       }
     ]
   },

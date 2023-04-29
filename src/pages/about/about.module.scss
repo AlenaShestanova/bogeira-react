@@ -1,18 +1,63 @@
+@import "../../assets/styles/constants";
+
 .aboutContainer {
-  margin-top: 130px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 
-  .name {
-    margin-bottom: 30px;
-    display: block;
+
+  .info {
+    margin-top: 130px;
+
+    .name {
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    p {
+      margin: 0;
+      width: 80%;
+    }
+
+    .photo {
+      display: block;
+      margin: 64px 0;
+    }
+
+    .factsRendererContainer {
+      margin-bottom: 40px;
+      .factsLabel {
+        cursor: pointer;
+        color: $grayText;
+
+        &:nth-child(2) {
+          margin-bottom: 40px;
+        }
+
+      }
+
+      .openFactsLabel {
+        color: $blackText;
+        margin-bottom: 24px;
+      }
+
+      .openedAccordion {
+        display: grid;
+        grid-template-rows: auto 100%;
+        grid-column-gap: 24px;
+        transition: max-height 0.5s cubic-bezier(.525, .66, .495, 1.4);
+        margin-bottom: 40px;
+      }
+    }
   }
 
-  p {
-    margin: 0;
+  .iraPhoto {
+    width: 100%;
+    height: calc(100vh - 82px);
+    background-image: url('../../assets/images/about/ira.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
-
-  .photo {
-    display: block;
-    margin: 64px 0;
-  }
-
 }
+
+
+

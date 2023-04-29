@@ -2,7 +2,12 @@
 
 .header {
   display: flex;
-  margin-bottom: 16px;
+  position: sticky;
+  top:0;
+  width: 100%;
+  z-index: 10;
+  background: $bgWhite;
+  padding:16px 0;
 
   .logoContainer {
     max-height: 34px;
