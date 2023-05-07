@@ -5,6 +5,12 @@
   display: flex;
   justify-content: space-between;
   color: $lightGrayText;
-  width: calc(50% - 32px);
+  width: calc(100% - 32px);
   bottom: 16px;
+
+}
+
+.halfPage {
+  left: 16px;
+  width: calc(50% - 32px);
 }

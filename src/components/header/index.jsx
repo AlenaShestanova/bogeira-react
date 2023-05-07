@@ -6,7 +6,7 @@ import { RoutesNames } from '../../routes/routes-names';
 import classes from './header.module.scss';
 import Logo from '../../assets/images/logo-icon.svg';
 import Bogeira from '../../assets/images/bogeira.svg';
-import { useTranslatedNavList } from '../../hooks/use-translated-nav-list';
+import { useTranslatedNavList } from './hooks/use-translated-nav-list';
 
 export const Header = () => {
   const { i18n } = useTranslation();

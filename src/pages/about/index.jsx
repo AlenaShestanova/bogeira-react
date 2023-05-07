@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { useTranslatedData } from './hooks/use-translated-data';
 import { FactsRender } from './components/facts-render';
+import { Footer } from '../../components/footer';
 
 import classes from './about.module.scss';
 
@@ -15,7 +17,8 @@ const About = props => {
         <span className={classes.photo}>{PHOTO_AUTHOR_TEXT}</span>
         <FactsRender facts={FACT_LIST} />
       </div>
-      <div className={classes.iraPhoto} />
+      <div className={classes.iraPhoto}></div>
+      <Footer isHalfPage />
     </div>
   );
 };

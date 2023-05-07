@@ -13,7 +13,7 @@ export const FactsRender = ({ facts }) => {
         if (item.description_item_list)
           return <Accordion label={item.label} items={item?.description_item_list} />;
 
-        return <FactsLabel label={item.label} />;
+        return <FactsLabel label={item.label} url={item.pageUrl} />;
       })}
     </div>
   );

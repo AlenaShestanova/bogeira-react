@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: 50% 50%;
 
-
   .info {
     margin-top: 130px;
 
@@ -25,14 +24,16 @@
 
     .factsRendererContainer {
       margin-bottom: 40px;
+
       .factsLabel {
         cursor: pointer;
         color: $grayText;
+        display: block;
+        text-decoration: none;
 
         &:nth-child(2) {
           margin-bottom: 40px;
         }
-
       }
 
       .openFactsLabel {
@@ -51,12 +52,16 @@
   }
 
   .iraPhoto {
-    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 66px;
     height: calc(100vh - 82px);
+    width: 100%;
     background-image: url('../../assets/images/about/ira.png');
     background-repeat: no-repeat;
     background-position: bottom;
   }
+
 }
 
 

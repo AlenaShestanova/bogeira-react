@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { RoutesNames } from '../routes/routes-names';
+import { RoutesNames } from '../../../routes/routes-names';
 
 export const useTranslatedNavList = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'header' });

@@ -1,13 +1,18 @@
 import { useTranslation } from 'react-i18next';
 
+import { TRANSLATION_FILE_NAME } from '../../../constants/translation-file-name';
+import { keyPrefixes, aboutPageKeys } from '../../../constants/translation-keys';
+
 export const useTranslatedData = () => {
-  const { t } = useTranslation('translation', { keyPrefix: 'about' });
+  const { t } = useTranslation(TRANSLATION_FILE_NAME, { keyPrefix: keyPrefixes.aboutPage });
 
-  const WHY_BOGEIRA_TEXT = t('why_bogeira');
-  const BOGEIRA_INFO_TEXT = t('bogeira_info');
-  const PHOTO_AUTHOR_TEXT = t('photo_author');
+  const { whyBogeira, bogeiraInfo, photoAuthor, factList } = aboutPageKeys;
 
-  const FACT_LIST = t('fact_list', { returnObjects: true });
+  const WHY_BOGEIRA_TEXT = t(whyBogeira);
+  const BOGEIRA_INFO_TEXT = t(bogeiraInfo);
+  const PHOTO_AUTHOR_TEXT = t(photoAuthor);
+
+  const FACT_LIST = t(factList, { returnObjects: true });
 
   return {
     WHY_BOGEIRA_TEXT,
