@@ -25,7 +25,7 @@ export const Header = () => {
       </NavLink>
       <div className={classes.navContainer}>
         {navList.map(({ url, title }, index) => (
-          <NavLink to={url} key={index}>
+          <NavLink to={url} key={index} className={({ isActive }) => isActive && classes.active}>
             {title}
           </NavLink>
         ))}

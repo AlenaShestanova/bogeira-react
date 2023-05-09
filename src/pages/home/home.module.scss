@@ -7,6 +7,7 @@
   align-items: flex-end;
   width: 100%;
 
+
   .imgWrap {
     width: 50%;
     height: 661px;
@@ -17,13 +18,14 @@
       width: 100%;
       height: 100%;
       transition: .8s cubic-bezier(0.48, 0.08, 0.38, 0.94);
+      object-fit: cover;
     }
 
     &:hover {
       width: calc(50% + 333px);
 
       .img {
-        transform: scale(1, 1.2);
+        transform: scale(1, 1);
       }
     }
   }

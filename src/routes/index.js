@@ -4,11 +4,12 @@ import { lazy } from 'react';
 
 const LazyHome = lazy(() => import('../pages/home'));
 const LazyAbout = lazy(() => import('../pages/about'));
-const LazyDrawing = lazy(() => import('../pages/drawing'));
-const LazyPainting = lazy(() => import('../pages/painting'));
-const LazyProjects = lazy(() => import('../pages/projects'));
-const LazySculpture = lazy(() => import('../pages/sculpture'));
-const LazyGraphics = lazy(() => import('../pages/graphics'));
+const LazyDrawing = lazy(() => import('../pages/about/sub-pages/drawing'));
+const LazyPainting = lazy(() => import('../pages/about/sub-pages/painting'));
+const LazyProjects = lazy(() => import('../pages/about/sub-pages/projects'));
+const LazySculpture = lazy(() => import('../pages/about/sub-pages/sculpture'));
+const LazyGraphics = lazy(() => import('../pages/about/sub-pages/graphics'));
+const LazyTouchByTouch = lazy(() => import('../pages/touch-by-touch'));
 
 export const appRoutes = [
   {
@@ -71,6 +72,15 @@ export const appRoutes = [
     element: (
       <React.Suspense fallback="Loading...">
         <LazySculpture />
+      </React.Suspense>
+    ),
+  },
+  {
+    fallback: <div>Loading...</div>,
+    path: RoutesNames.TOUCH_BY_TOUCH,
+    element: (
+      <React.Suspense fallback="Loading...">
+        <LazyTouchByTouch />
       </React.Suspense>
     ),
   },

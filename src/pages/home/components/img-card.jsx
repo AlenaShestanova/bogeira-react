@@ -1,10 +1,12 @@
 import React, { memo } from 'react';
+import { NavLink } from 'react-router-dom';
+
 import classes from '../home.module.scss';
 
-export const ImgCard = memo(({ src, alt }) => {
+export const ImgCard = memo(({ imgSrc, alt, route }) => {
   return (
-    <div className={classes.imgWrap}>
-      <img className={classes.img} src={src} alt={alt} />
-    </div>
+    <NavLink to={route} className={classes.imgWrap}>
+      <img className={classes.img} src={imgSrc} alt={alt} />
+    </NavLink>
   );
 });
