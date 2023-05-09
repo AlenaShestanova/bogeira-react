@@ -3,7 +3,7 @@ export class RoutesNames {
   static ABOUT = '/about';
 
   static TOUCH_BY_TOUCH = '/touch_by_touch';
-  static JEWELRY_PIECES = '/jewelry_pieces';
+  static JEWELRY = '/jewelry';
   static CABINET_OBJECTS = '/cabinet_objects';
   static CONTACTS = '/contacts';
 
@@ -13,5 +13,15 @@ export class RoutesNames {
     DRAWING: `${this.ABOUT}/drawing`,
     SCULPTURE: `${this.ABOUT}/sculpture`,
     GRAPHICS: `${this.ABOUT}/graphics`,
+  };
+
+  static JEWELRY_SUB_PAGES = {
+    AQUARIUS: `${this.JEWELRY}/aquarius`,
+    NS: `${this.JEWELRY}/n&s`,
+    INTELLECTUAL_AND_STYLISH: `${this.JEWELRY}/intellectual_and_stylish`,
+    ALL_MY_LOVE: `${this.JEWELRY}/all_my_love`,
+    MAKI: `${this.JEWELRY}/maki`,
+    HEALTH_NUT_GIRL: `${this.JEWELRY}/health_nut_girl`,
+    ROSEMARY: `${this.JEWELRY}/rosemary`,
   };
 }

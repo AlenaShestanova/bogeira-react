@@ -1,0 +1,46 @@
+{
+  "jewelry": [
+    {
+      "route": "/jewelry/aquarius",
+      "object": "Bracelet",
+      "name": "Aquarius",
+      "description": "CoCr, heat tints, 2022"
+    },
+    {
+      "route": "/jewelry/n&s",
+      "object": "Rings",
+      "name": "N&S",
+      "description": "СоСr, 2019-2020"
+    },
+    {
+      "route": "/jewelry/intellectual_and_stylish",
+      "object": "Ring and earrings",
+      "name": "Intellectual and stylish",
+      "description": "CoCr, stoving enamel, 2020"
+    },
+    {
+      "route": "/jewelry/all_my_love",
+      "object": "Rings",
+      "name": "All my love",
+      "description": "CoCr, stoving ename, 2019"
+    },
+    {
+      "route": "/jewelry/maki",
+      "object": "Earrings",
+      "name": "Poppy",
+      "description": "Silver, patina, 2019"
+    },
+    {
+      "route": "/jewelry/health_nut_girl",
+      "object": "Bracelet",
+      "name": "Health nut girl (doing a bridge stretch)",
+      "description": "Copper, patina, 2019"
+    },
+    {
+      "route": "/jewelry/rosemary",
+      "object": "Brooch",
+      "name": "Rosemary",
+      "description": "Silver, patina, 2017"
+    }
+  ]
+}

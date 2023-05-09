@@ -8,6 +8,7 @@ export const keyPrefixes = {
   sculpturePage: 'sculpture',
   graphicsPage: 'graphics',
   touchByTouchPage: 'touch_by_touch',
+  jewelryPage: 'jewelry',
 };
 
 export const aboutPageKeys = {
@@ -39,4 +40,11 @@ export const touchByTouchKeys = {
   material: 'material',
   description: 'description',
   photo: 'photo',
+};
+
+export const jewelryKeys = {
+  route: 'route',
+  object: 'object',
+  name: 'name',
+  description: 'description',
 };

@@ -1,0 +1,46 @@
+{
+  "jewelry": [
+    {
+      "route": "/jewelry/aquarius",
+      "object": "Браслет",
+      "name": "Aquarius",
+      "description": "CoCr, цвета побежалости, 2022"
+    },
+    {
+      "route": "/jewelry/n&s",
+      "object": "Серия колец",
+      "name": "N&S",
+      "description": "СоСr, 2019-2020"
+    },
+    {
+      "route": "/jewelry/intellectual_and_stylish",
+      "object": "Кольцо и серьги",
+      "name": "Стильная интеллектуалка",
+      "description": "CoCr, горячая эмаль, 2020"
+    },
+    {
+      "route": "/jewelry/all_my_love",
+      "object": "Пара колец",
+      "name": "С любовью",
+      "description": "CoСr, горячая эмаль, 2019"
+    },
+    {
+      "route": "/jewelry/maki",
+      "object": "Серьги",
+      "name": "Маки",
+      "description": "Серебро, патина, 2019"
+    },
+    {
+      "route": "/jewelry/health_nut_girl",
+      "object": "Брастлет",
+      "name": "Зожница на мостике",
+      "description": "Медь, патина, гравировка, 2019"
+    },
+    {
+      "route": "/jewelry/rosemary",
+      "object": "Брошь",
+      "name": "Розмарин",
+      "description": "Серебро, патина, 2017"
+    }
+  ]
+}
