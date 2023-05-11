@@ -4,11 +4,15 @@ import { RoutesNames } from '../../../routes/routes-names';
 import { TRANSLATION_FILE_NAME } from '../../../constants/translation-file-name';
 import { headerKeys, keyPrefixes } from '../../../constants/translation-keys';
 
-export const useTranslatedNavList = () => {
-  const { t } = useTranslation(TRANSLATION_FILE_NAME, { keyPrefix: keyPrefixes.header });
+export const useHeader = () => {
+  const { t, i18n } = useTranslation(TRANSLATION_FILE_NAME, { keyPrefix: keyPrefixes.header });
   const { about, touch_by_touch, cabinet_objects, contacts, jewelry_pieces } = headerKeys;
 
-  return [
+  const handleChangeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
+
+  const navItems = [
     {
       title: t(about),
       url: RoutesNames.ABOUT,
@@ -19,7 +23,7 @@ export const useTranslatedNavList = () => {
     },
     {
       title: t(jewelry_pieces),
-      url: RoutesNames.JEWELRY_PIECES,
+      url: RoutesNames.JEWELRY,
     },
     {
       title: t(cabinet_objects),
@@ -30,4 +34,9 @@ export const useTranslatedNavList = () => {
       url: RoutesNames.CONTACTS,
     },
   ];
+
+  return {
+    navItems,
+    handleChangeLanguage,
+  };
 };

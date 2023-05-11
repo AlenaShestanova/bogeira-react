@@ -1,0 +1,28 @@
+@import "../../assets/styles/constants";
+
+.contactsContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .info {
+    margin-top: 150px;
+    list-style: none;
+    padding: 0;
+    color: $blackText;
+
+    a {
+      color: $blackText;
+    }
+  }
+
+  .photo {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 66px;
+    height: calc(100vh - 82px);
+    width: 100%;
+    background-image: url('../../assets/images/contacts/image1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}

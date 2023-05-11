@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { TRANSLATION_FILE_NAME } from '../../constants/translation-file-name';
 import { footerKeys, keyPrefixes } from '../../constants/translation-keys';
+import { EMAIL } from '../../constants/email';
 
 import classes from './footer.module.scss';
 
@@ -17,7 +18,7 @@ export const Footer = ({ isHalfPage, className }) => {
   return (
     <footer className={classNames}>
       <span>{name}</span>
-      <span>irabogolyubova@gmail.com</span>
+      <span>{EMAIL}</span>
     </footer>
   );
 };
