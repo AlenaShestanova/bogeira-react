@@ -8,16 +8,10 @@ export const useAbout = () => {
 
   const { whyBogeira, bogeiraInfo, photoAuthor, factList } = aboutPageKeys;
 
-  const WHY_BOGEIRA_TEXT = t(whyBogeira);
-  const BOGEIRA_INFO_TEXT = t(bogeiraInfo);
-  const PHOTO_AUTHOR_TEXT = t(photoAuthor);
-
-  const FACT_LIST = t(factList, { returnObjects: true });
-
   return {
-    WHY_BOGEIRA_TEXT,
-    BOGEIRA_INFO_TEXT,
-    PHOTO_AUTHOR_TEXT,
-    FACT_LIST,
+    whyBogeira: t(whyBogeira),
+    bogeiraInfo: t(bogeiraInfo),
+    photoAuthor: t(photoAuthor),
+    factList: t(factList, { returnObjects: true }),
   };
 };

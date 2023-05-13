@@ -8,7 +8,17 @@ export const keyPrefixes = {
   sculpturePage: 'sculpture',
   graphicsPage: 'graphics',
   touchByTouchPage: 'touch_by_touch',
+};
+
+export const jewelryKeyPrefixes = {
   jewelryPage: 'jewelry',
+  aquariusPage: 'aquarius',
+  nsPage: 'n&s',
+  intellectual: 'intellectual_and_stylish',
+  all_my_love: 'all_my_love',
+  maki: 'maki',
+  health_nut_girl: 'health_nut_girl',
+  rosemary: 'rosemary',
 };
 
 export const aboutPageKeys = {
@@ -47,4 +57,12 @@ export const jewelryKeys = {
   object: 'object',
   name: 'name',
   description: 'description',
+};
+
+export const productDetailInfoKeys = {
+  object: 'object',
+  name: 'name',
+  material: 'material',
+  description: 'description',
+  photo: 'photo',
 };

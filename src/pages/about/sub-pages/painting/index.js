@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { AboutSubPage } from '../../components/about-sub-page';
-import { useAboutSubPage } from '../../../../hooks/use-about-sub-page';
+import { useAboutSubPage } from '../../hooks/use-about-sub-page';
 import { keyPrefixes } from '../../../../constants/translation-keys';
 import { Img1, Img3, Img2 } from '../../../../assets/images/about/painting';
 

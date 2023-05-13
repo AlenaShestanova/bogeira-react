@@ -1,0 +1,16 @@
+import { JewelrySubPage } from '../../components/jewelry-sub-page';
+
+import { Img1, Img2 } from '../../../../assets/images/jewelry/jewelry-items/rosemary';
+import { useSubPages } from '../../hooks/use-sub-pages';
+import { jewelryKeyPrefixes } from '../../../../constants/translation-keys';
+
+const Rosemary = () => {
+  const images = [Img1, Img2];
+
+  const data = useSubPages({
+    keyPrefix: jewelryKeyPrefixes.rosemary,
+  });
+
+  return <JewelrySubPage images={images} {...data} />;
+};
+export default Rosemary;

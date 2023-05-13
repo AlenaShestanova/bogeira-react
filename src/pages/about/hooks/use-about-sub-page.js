@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
-import { TRANSLATION_FILE_NAME } from '../constants/translation-file-name';
-import { aboutSubPagesTranslationKeys } from '../constants/translation-keys';
+import { TRANSLATION_FILE_NAME } from '../../../constants/translation-file-name';
+import { aboutSubPagesTranslationKeys } from '../../../constants/translation-keys';
 
 export const useAboutSubPage = ({ keyPrefix, images }) => {
   const { t } = useTranslation(TRANSLATION_FILE_NAME, { keyPrefix });

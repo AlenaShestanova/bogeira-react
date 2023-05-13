@@ -10,11 +10,11 @@ const Jewelery = () => {
 
   return (
     <div className={classes.jewelryContainer}>
-      {items.map(({ route, name, description, object, imgSrc }) => (
+      {items.map(({ route, name, material, object, imgSrc }) => (
         <NavLink to={route} className={classes.item}>
           <div className={classes.photoDescription}>
             {object} <br /> {name} <br />
-            {description}
+            {material}
           </div>
           <img src={imgSrc} alt={name} />
         </NavLink>
