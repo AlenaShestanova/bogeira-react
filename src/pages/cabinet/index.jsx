@@ -1,10 +1,11 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { useJewelry } from './hooks/use-jewelry';
 import { Footer } from '../../components/footer';
+import { useCabinet } from './hooks/use-cabinet';
 
-const Jewelery = () => {
-  const { items } = useJewelry();
+const Cabinet = () => {
+  const { items } = useCabinet();
 
   return (
     <div className="generalContainerWithSubPages">
@@ -22,5 +23,4 @@ const Jewelery = () => {
     </div>
   );
 };
-
-export default Jewelery;
+export default Cabinet;

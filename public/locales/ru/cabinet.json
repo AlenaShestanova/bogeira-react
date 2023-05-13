@@ -1,0 +1,34 @@
+{
+  "cabinet": [
+    {
+      "route": "/jewelry/aquarius",
+      "object": "Кубок",
+      "name": "Шиле, 2019",
+      "material": "Латунь, стекло"
+    },
+    {
+      "route": "/jewelry/n&s",
+      "object": "Кабинетный нож",
+      "name": "Клинопись",
+      "material": "Латунь, лазурит, 2018"
+    },
+    {
+      "route": "/jewelry/intellectual_and_stylish",
+      "object": "Аромалампа",
+      "name": "Sepia",
+      "material": "Медь, серебрение, 2018"
+    },
+    {
+      "route": "/jewelry/all_my_love",
+      "object": "Стопа",
+      "name": "Казань",
+      "material": "Медь, позолота, патина, 2018"
+    },
+    {
+      "route": "/jewelry/maki",
+      "object": "Декоративный поднос",
+      "name": "Ultima thule",
+      "material": "Латунь, серебрение, позолота, патина, 2017"
+    }
+  ]
+}

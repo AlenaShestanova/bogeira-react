@@ -23,6 +23,8 @@ const LazyMaki = lazy(() => import('../pages/jewelry/sub-pages/maki'));
 const LazyHealthNutGirl = lazy(() => import('../pages/jewelry/sub-pages/heath-nut-girl'));
 const LazyRosemary = lazy(() => import('../pages/jewelry/sub-pages/rosemary'));
 
+const LazyCabinet = lazy(() => import('../pages/cabinet'));
+
 const LazyContacts = lazy(() => import('../pages/contacts'));
 
 export const appRoutes = [
@@ -167,6 +169,15 @@ export const appRoutes = [
     element: (
       <React.Suspense fallback="Loading...">
         <LazyAllMyLove />
+      </React.Suspense>
+    ),
+  },
+  {
+    fallback: <div>Loading...</div>,
+    path: RoutesNames.CABINET_OBJECTS,
+    element: (
+      <React.Suspense fallback="Loading...">
+        <LazyCabinet />
       </React.Suspense>
     ),
   },

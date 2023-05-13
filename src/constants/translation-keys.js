@@ -21,6 +21,10 @@ export const jewelryKeyPrefixes = {
   rosemary: 'rosemary',
 };
 
+export const cabinetKeyPrefixes = {
+  cabinetPage: 'cabinet',
+};
+
 export const aboutPageKeys = {
   whyBogeira: 'why_bogeira',
   bogeiraInfo: 'bogeira_info',
