@@ -25,6 +25,12 @@ const LazyRosemary = lazy(() => import('../pages/jewelry/sub-pages/rosemary'));
 
 const LazyCabinet = lazy(() => import('../pages/cabinet'));
 
+const LazyGoblet = lazy(() => import('../pages/cabinet/sub-pages/goblet'));
+const LazyGobletKazan = lazy(() => import('../pages/cabinet/sub-pages/goblet-kazan'));
+const LazySepia = lazy(() => import('../pages/cabinet/sub-pages/sepia'));
+const LazyPlate = lazy(() => import('../pages/cabinet/sub-pages/plate'));
+const LazyPaperKnife = lazy(() => import('../pages/cabinet/sub-pages/paper-knife'));
+
 const LazyContacts = lazy(() => import('../pages/contacts'));
 
 export const appRoutes = [
@@ -178,6 +184,51 @@ export const appRoutes = [
     element: (
       <React.Suspense fallback="Loading...">
         <LazyCabinet />
+      </React.Suspense>
+    ),
+  },
+  {
+    fallback: <div>Loading...</div>,
+    path: RoutesNames.CABINET_SUB_PAGES.GOBLET,
+    element: (
+      <React.Suspense fallback="Loading...">
+        <LazyGoblet />
+      </React.Suspense>
+    ),
+  },
+  {
+    fallback: <div>Loading...</div>,
+    path: RoutesNames.CABINET_SUB_PAGES.PAPER_KNIFE,
+    element: (
+      <React.Suspense fallback="Loading...">
+        <LazyPaperKnife />
+      </React.Suspense>
+    ),
+  },
+  {
+    fallback: <div>Loading...</div>,
+    path: RoutesNames.CABINET_SUB_PAGES.SEPIA,
+    element: (
+      <React.Suspense fallback="Loading...">
+        <LazySepia />
+      </React.Suspense>
+    ),
+  },
+  {
+    fallback: <div>Loading...</div>,
+    path: RoutesNames.CABINET_SUB_PAGES.GOBLET_KAZAN,
+    element: (
+      <React.Suspense fallback="Loading...">
+        <LazyGobletKazan />
+      </React.Suspense>
+    ),
+  },
+  {
+    fallback: <div>Loading...</div>,
+    path: RoutesNames.CABINET_SUB_PAGES.PLATE,
+    element: (
+      <React.Suspense fallback="Loading...">
+        <LazyPlate />
       </React.Suspense>
     ),
   },

@@ -12,9 +12,9 @@ const Cabinet = () => {
       {items.map(({ route, name, material, object, imgSrc }) => (
         <NavLink to={route} className="generalContainerWithSubPages_item">
           <div className="generalContainerWithSubPages_item_photoDescription">
-            {object} <br />
-            {name} <br />
-            {material}
+            <div>{object} </div>
+            <div>{name}</div>
+            <div>{material}</div>
           </div>
           <img src={imgSrc} alt={name} />
         </NavLink>

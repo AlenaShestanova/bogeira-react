@@ -24,4 +24,12 @@ export class RoutesNames {
     HEALTH_NUT_GIRL: `${this.JEWELRY}/health_nut_girl`,
     ROSEMARY: `${this.JEWELRY}/rosemary`,
   };
+
+  static CABINET_SUB_PAGES = {
+    GOBLET: `${this.CABINET_OBJECTS}/goblet`,
+    PAPER_KNIFE: `${this.CABINET_OBJECTS}/paper_knife`,
+    SEPIA: `${this.CABINET_OBJECTS}/sepia`,
+    GOBLET_KAZAN: `${this.CABINET_OBJECTS}/goblet_kazan`,
+    PLATE: `${this.CABINET_OBJECTS}/plate`,
+  };
 }

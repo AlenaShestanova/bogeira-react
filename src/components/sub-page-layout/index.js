@@ -1,6 +1,6 @@
-import { Footer } from '../../../components/footer';
+import { Footer } from '../footer';
 
-export const JewelrySubPage = ({ object, name, material, photo, description, images }) => {
+export const SubPageLayout = ({ object, name, material, photo, description, images }) => {
   return (
     <div className="generalContainerWithGallery">
       <div className="generalContainerWithGallery_info">

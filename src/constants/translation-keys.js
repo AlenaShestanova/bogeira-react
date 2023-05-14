@@ -23,6 +23,11 @@ export const jewelryKeyPrefixes = {
 
 export const cabinetKeyPrefixes = {
   cabinetPage: 'cabinet',
+  gobletPage: 'goblet',
+  paperKnifePage: 'paper_knife',
+  sepiaPage: 'sepia',
+  gobletKazanPage: 'goblet_kazan',
+  platePage: 'plate',
 };
 
 export const aboutPageKeys = {

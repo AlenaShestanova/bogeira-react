@@ -3,7 +3,7 @@ import React from 'react';
 import { useSubPages } from '../../hooks/use-sub-pages';
 import { Img1, Img2, Img3 } from '../../../../assets/images/jewelry/jewelry-items/aquarius';
 import { jewelryKeyPrefixes } from '../../../../constants/translation-keys';
-import { JewelrySubPage } from '../../components/jewelry-sub-page';
+import { SubPageLayout } from '../../../../components/sub-page-layout';
 
 const Aquarius = () => {
   const images = [Img1, Img2, Img3];
@@ -12,6 +12,6 @@ const Aquarius = () => {
     keyPrefix: jewelryKeyPrefixes.aquariusPage,
   });
 
-  return <JewelrySubPage {...data} images={images} />;
+  return <SubPageLayout {...data} images={images} />;
 };
 export default Aquarius;
