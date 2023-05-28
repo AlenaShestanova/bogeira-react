@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import { productDetailInfoKeys } from '../constants/translation-keys';
+import { productDetailInfoKeys } from '../constants/general-translation-keys';
 
 export const useSubPages = ({ translationFile, keyPrefix }) => {
   const { t } = useTranslation(translationFile, { keyPrefix });

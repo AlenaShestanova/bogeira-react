@@ -1,11 +1,4 @@
 {
-  "header": {
-    "about": "about",
-    "touch_by_touch": "touch by touch",
-    "jewelry_pieces": "jewelry pieces",
-    "cabinet_objects": "the cabinet objects",
-    "contacts": "contacts"
-  },
   "about": {
     "why_bogeira": "My name is Irina Bogolyubova and I am a jewelry artist. My creative alias is Bogeira.",
     "bogeira_info": "To my mind, a jewelry art piece is a sculptural form fitted into environment of a human body. It is a story about sense, tactility and feeling. I prefer making handiwork, I love creating non-symmetric pieces. It is my understanding that a jewelry should be extremely comfortable and feel-good despite of the size. Now I work mostly in stainless steel and stoving enamel.",
@@ -93,14 +86,5 @@
       "Project of a Prize cup (copy), drafting ink, aquarelle, 2017",
       "Project “Woman’s face and и chrysanthemum” (copy), aquarelle, gouache, pencil, 2017"
     ]
-  },
-  "touch_by_touch": {
-    "name": "Touch by touch, 2021",
-    "material": "stoving enamel",
-    "description": "«Touch by touch» is sensuality in metal frame. It is my belief that the most intimate branch of art is jewelry. It exists in the relationship with human body: an orfevrerie adjoints body curves, it is in close contact with the skin. Touch is one of the most important tools to perceive the world and ourselves. Working on the collection, I was eager to create a tactile dialogue. The basic principle of shaping pieces is modeling by touching. Body is an environment for the jewelry pieces and the key moment is to feel the jewels.",
-    "photo": "Photo: Olga Makarova, Sophie Sherova, Jeanne Dulepova"
-  },
-  "footer": {
-    "ira_name": "Irina Bogolyubova, 2022"
   }
 }

@@ -1,19 +1,19 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { TRANSLATION_FILE_NAME } from '../../constants/translation-file-name';
-import { footerKeys, keyPrefixes } from '../../constants/translation-keys';
 import { EMAIL } from '../../constants/email';
-
 import classes from './footer.module.scss';
+import { TRANSLATION_CONFIG } from '../../constants/tranlsation-config';
 
 export const Footer = ({ isHalfPage, className }) => {
-  const { t } = useTranslation(TRANSLATION_FILE_NAME, { keyPrefix: keyPrefixes.footer });
-  const { iraName } = footerKeys;
+  const { fileName, keyPrefixes, keys } = TRANSLATION_CONFIG.footer;
+
+  const { t } = useTranslation(fileName, { keyPrefix: keyPrefixes.footer });
+  const { ira_name } = keys.footer;
 
   const classNames = `${classes.footer} ${className} ${isHalfPage && classes.halfPage}`;
 
-  const name = t(iraName);
+  const name = t(ira_name);
 
   return (
     <footer className={classNames}>

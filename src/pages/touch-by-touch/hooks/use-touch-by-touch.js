@@ -15,12 +15,13 @@ import {
   Img11,
   Img10,
 } from '../../../assets/images/touch-by-touch';
-import { TRANSLATION_FILE_NAME } from '../../../constants/translation-file-name';
-import { keyPrefixes, touchByTouchKeys } from '../../../constants/translation-keys';
+import { TRANSLATION_CONFIG } from '../../../constants/tranlsation-config';
 
 export const useTouchByTouch = () => {
-  const { t } = useTranslation(TRANSLATION_FILE_NAME, { keyPrefix: keyPrefixes.touchByTouchPage });
-  const { name, material, description, photo } = touchByTouchKeys;
+  const { keyPrefixes, fileName, keys } = TRANSLATION_CONFIG.touch_by_touch;
+
+  const { t } = useTranslation(fileName, { keyPrefix: keyPrefixes.touch_by_touch });
+  const { name, material, description, photo } = keys.touch_by_touch;
 
   const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img11, Img12, Img13];
 
