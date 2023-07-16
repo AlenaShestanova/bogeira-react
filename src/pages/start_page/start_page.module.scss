@@ -1,0 +1,45 @@
+.bogeiraLogo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.animation{
+  animation-name: logo-move;
+  transition: all 0.5s ease-out;
+  animation-duration: 1.5s, 5s;
+}
+
+@keyframes logo-move {
+  from {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  50% {
+    width: 44px;
+    height: 44px;
+
+  }
+
+  75% {
+    width: 34px;
+    height: 34px;
+  }
+
+  to {
+    top: 16px;
+    left: 16px;
+    transform: translate(-3%, -3%);
+    width: 34px;
+    height: 34px;
+
+  }
+}

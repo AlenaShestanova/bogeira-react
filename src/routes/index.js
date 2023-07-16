@@ -3,6 +3,8 @@ import { lazy } from 'react';
 
 import { RoutesNames } from './routes-names';
 
+const LazyStartPage = lazy(() => import('../pages/start_page'));
+
 const LazyHome = lazy(() => import('../pages/home'));
 const LazyAbout = lazy(() => import('../pages/about'));
 
@@ -37,6 +39,15 @@ export const appRoutes = [
   {
     fallback: <div>Loading...</div>,
     path: RoutesNames.INDEX,
+    element: (
+      <React.Suspense fallback="Loading...">
+        <LazyStartPage />
+      </React.Suspense>
+    ),
+  },
+  {
+    fallback: <div>Loading...</div>,
+    path: RoutesNames.HOME,
     element: (
       <React.Suspense fallback="Loading...">
         <LazyHome />

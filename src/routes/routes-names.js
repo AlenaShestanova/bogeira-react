@@ -1,5 +1,8 @@
 export class RoutesNames {
   static INDEX = '/';
+
+  static HOME = '/home';
+
   static ABOUT = '/about';
 
   static TOUCH_BY_TOUCH = '/touch_by_touch';

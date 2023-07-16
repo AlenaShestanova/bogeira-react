@@ -1,4 +1,5 @@
 import React from 'react';
+import { SlideshowLightbox } from 'lightbox.js-react';
 
 import { Footer } from '../../components/footer';
 import { useTouchByTouch } from './hooks/use-touch-by-touch';
@@ -18,9 +19,11 @@ const TouchByTouch = () => {
         <span>{photo}</span>
       </div>
       <div className={classes.imagesListGrid}>
-        {images.map(imgSrc => (
-          <img src={imgSrc} alt="touch-by-touch collection" />
-        ))}
+        <SlideshowLightbox theme="day" showControls backgroundColor="#FFF" showThumbnails>
+          {images.map(imgSrc => (
+            <img src={imgSrc} alt="touch-by-touch collection" />
+          ))}
+        </SlideshowLightbox>
       </div>
       <Footer isHalfPage />
     </div>
