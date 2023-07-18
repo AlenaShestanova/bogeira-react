@@ -38,8 +38,11 @@ export const useHeader = () => {
     },
   ];
 
+  const language = i18n.language;
+
   return {
     navItems,
     handleChangeLanguage,
+    language,
   };
 };
