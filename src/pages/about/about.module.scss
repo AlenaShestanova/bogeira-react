@@ -64,5 +64,48 @@
 
 }
 
+@media screen and (max-width: 960px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+    grid-template-columns: none;
 
+    .info {
+      order: 2;
+      margin-top: 0;
+
+      p {
+        width: 100%;
+      }
+
+      .photo {
+        margin-top:10px;
+        margin-bottom: 58px;
+      }
+
+      .factsRendererContainer {
+        margin-bottom: 0;
+
+        .factsLabel {
+          color: $blackText;
+        }
+      }
+    }
+
+    .iraPhoto {
+      order: 1;
+      position:static;
+      background-size: cover;
+      max-height: 449px;
+      background-position: center;
+      margin-bottom: 32px;
+    }
+
+    footer {
+      bottom: 32px;
+    }
+  }
+
+}
 

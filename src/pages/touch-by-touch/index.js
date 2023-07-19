@@ -5,9 +5,11 @@ import { Footer } from '../../components/footer';
 import { useTouchByTouch } from './hooks/use-touch-by-touch';
 
 import classes from './touch-by-touch.module.scss';
+import { useResize } from '../../hooks/use-resize';
 
 const TouchByTouch = () => {
   const { images, name, description, photo, material } = useTouchByTouch();
+  const { isMobile } = useResize();
 
   return (
     <div className={classes.touchByContainer}>
@@ -25,7 +27,7 @@ const TouchByTouch = () => {
           ))}
         </SlideshowLightbox>
       </div>
-      <Footer isHalfPage />
+      <Footer isHalfPage={!isMobile} />
     </div>
   );
 };

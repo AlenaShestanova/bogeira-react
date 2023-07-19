@@ -5,9 +5,11 @@ import { FactsRender } from './components/facts-render';
 import { Footer } from '../../components/footer';
 
 import classes from './about.module.scss';
+import { useResize } from '../../hooks/use-resize';
 
 const About = () => {
   const { bogeiraInfo, whyBogeira, photoAuthor, factList } = useAbout();
+  const { isMobile } = useResize();
 
   return (
     <div className={classes.aboutContainer}>
@@ -18,7 +20,7 @@ const About = () => {
         <FactsRender facts={factList} />
       </div>
       <div className={classes.iraPhoto}></div>
-      <Footer isHalfPage />
+      <Footer isHalfPage={!isMobile} />
     </div>
   );
 };
