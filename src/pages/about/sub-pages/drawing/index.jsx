@@ -10,6 +10,7 @@ const Drawing = () => {
 
   const images = [Img1, Img2, Img3];
 
+  console.log(keyPrefixes.drawingPage, 'KEY');
   const { items, label } = useAboutSubPage({
     keyPrefix: keyPrefixes.drawingPage,
     images,

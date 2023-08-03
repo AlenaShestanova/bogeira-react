@@ -1,7 +1,7 @@
 export class RoutesNames {
   static INDEX = '/';
 
-  static HOME = '/home';
+  static HOME = '/';
 
   static ABOUT = '/about';
 

@@ -16,7 +16,6 @@ const Home = props => {
   const { isMobile } = useResize();
 
   const location = useLocation();
-  console.log(location, 'LOCATION');
   return (
     <div className={classes.homeContainer}>
       <div className={classes.homeContainer_imgContainer}>

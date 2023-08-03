@@ -26,3 +26,27 @@
     background-position: bottom;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+
+    .info {
+      margin:0 0 40px 0;
+    }
+
+    .photo {
+      order: 1;
+      position:static;
+      background-size: cover;
+      max-height: 519px;
+      background-position: center;
+    }
+
+    footer {
+      bottom: 32px;
+    }
+  }
+}

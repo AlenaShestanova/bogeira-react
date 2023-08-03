@@ -2,9 +2,11 @@ import { NavLink } from 'react-router-dom';
 
 import { useJewelry } from './hooks/use-jewelry';
 import { Footer } from '../../components/footer';
+import { useResize } from '../../hooks/use-resize';
 
 const Jewelery = () => {
   const { items } = useJewelry();
+  const { isMobile } = useResize();
 
   return (
     <div className="generalContainerWithSubPages">
@@ -18,7 +20,7 @@ const Jewelery = () => {
           <img src={imgSrc} alt={name} />
         </NavLink>
       ))}
-      <Footer isHalfPage />
+      <Footer isHalfPage={!isMobile} />
     </div>
   );
 };

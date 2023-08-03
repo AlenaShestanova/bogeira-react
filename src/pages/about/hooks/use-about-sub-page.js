@@ -4,7 +4,7 @@ import { TRANSLATION_CONFIG } from '../../../constants/tranlsation-config';
 import { aboutSubPagesTranslationKeys } from '../../../constants/general-translation-keys';
 
 export const useAboutSubPage = ({ keyPrefix, images }) => {
-  const { fileName } = TRANSLATION_CONFIG;
+  const { fileName } = TRANSLATION_CONFIG.about;
 
   const { t } = useTranslation(fileName, { keyPrefix });
 

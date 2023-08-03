@@ -4,8 +4,11 @@ import { Footer } from '../../components/footer';
 import { contactsList } from './constants/contacts-list';
 
 import classes from './contacts.module.scss';
+import { useResize } from '../../hooks/use-resize';
 
 const Contacts = () => {
+  const { isMobile } = useResize();
+
   return (
     <div className={classes.contactsContainer}>
       <ul className={classes.info}>
@@ -19,7 +22,7 @@ const Contacts = () => {
         ))}
       </ul>
       <div className={classes.photo}></div>
-      <Footer isHalfPage />
+      <Footer isHalfPage={!isMobile} />
     </div>
   );
 };

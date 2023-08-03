@@ -36,15 +36,15 @@ const LazyPaperKnife = lazy(() => import('../pages/cabinet/sub-pages/paper-knife
 const LazyContacts = lazy(() => import('../pages/contacts'));
 
 export const appRoutes = [
-  {
-    fallback: <div>Loading...</div>,
-    path: RoutesNames.INDEX,
-    element: (
-      <React.Suspense fallback="Loading...">
-        <LazyStartPage />
-      </React.Suspense>
-    ),
-  },
+  // {
+  //   fallback: <div>Loading...</div>,
+  //   path: RoutesNames.INDEX,
+  //   element: (
+  //     <React.Suspense fallback="Loading...">
+  //       <LazyStartPage />
+  //     </React.Suspense>
+  //   ),
+  // },
   {
     fallback: <div>Loading...</div>,
     path: RoutesNames.HOME,

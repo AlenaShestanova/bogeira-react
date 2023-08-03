@@ -3,9 +3,11 @@ import { NavLink } from 'react-router-dom';
 
 import { Footer } from '../../components/footer';
 import { useCabinet } from './hooks/use-cabinet';
+import { useResize } from '../../hooks/use-resize';
 
 const Cabinet = () => {
   const { items } = useCabinet();
+  const { isMobile } = useResize();
 
   return (
     <div className="generalContainerWithSubPages">
@@ -19,7 +21,7 @@ const Cabinet = () => {
           <img src={imgSrc} alt={name} />
         </NavLink>
       ))}
-      <Footer isHalfPage />
+      <Footer isHalfPage={!isMobile} />
     </div>
   );
 };
