@@ -1,6 +1,11 @@
 import { Footer } from '../footer';
+import { useResize } from '../../hooks/use-resize';
+import { SlideshowLightbox } from 'lightbox.js-react';
+import React from 'react';
 
 export const SubPageLayout = ({ object, name, material, photo, description, images }) => {
+  const { isMobile } = useResize();
+
   return (
     <div className="generalContainerWithGallery">
       <div className="generalContainerWithGallery_info">
@@ -11,11 +16,13 @@ export const SubPageLayout = ({ object, name, material, photo, description, imag
         <span>{photo}</span>
       </div>
       <div className="generalContainerWithGallery_imagesList">
-        {images.map(imgSrc => (
-          <img src={imgSrc} alt="jewelry collection" />
-        ))}
+        <SlideshowLightbox theme="day" showControls backgroundColor="#FFF" showThumbnails>
+          {images.map(imgSrc => (
+            <img src={imgSrc} alt="jewelry collection" />
+          ))}
+        </SlideshowLightbox>
       </div>
-      <Footer isHalfPage />
+      <Footer isHalfPage={!isMobile} />
     </div>
   );
 };
