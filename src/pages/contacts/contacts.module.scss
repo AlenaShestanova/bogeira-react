@@ -2,7 +2,7 @@
 
 .contactsContainer {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 51% 49%;
 
   .info {
     margin-top: 150px;
@@ -23,7 +23,9 @@
     width: 100%;
     background-image: url('../../assets/images/contacts/image1.png');
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position:bottom;
+    background-size: cover;
+
   }
 }
 

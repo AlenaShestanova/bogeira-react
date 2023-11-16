@@ -18,7 +18,7 @@ body {
 
 .generalContainerWithGallery {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 51% 49%;
 
   &_info {
     max-width: 70%;
@@ -34,14 +34,18 @@ body {
   }
 
   &_imagesList {
-    display: grid;
-    row-gap: 16px;
+
     overflow: hidden;
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+    &_sliderContainer {
+      display: grid;
+      grid-row-gap: 16px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 }
@@ -52,7 +56,7 @@ body {
 
   &_item {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 51% 49%;
     color: $grayText;
     cursor: pointer;
     text-decoration: none;
@@ -128,19 +132,11 @@ body {
     }
 
     &_imagesList {
-      display: grid;
-      grid-row-gap: 16px;
       overflow: hidden;
 
 
       img:not(:last-child) {
         margin-bottom: 16px;
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
       }
     }
   }

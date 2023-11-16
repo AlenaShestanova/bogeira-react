@@ -11,7 +11,7 @@
 
   .logoContainer {
     max-height: 34px;
-    width: 50%;
+    width: 51%;
 
     .logoIcon {
       //visibility: hidden;
@@ -32,7 +32,7 @@
     list-style-type: none;
     align-items: center;
     padding: 0;
-    width: 50%;
+    width: 49%;
 
     a {
       margin-right: 24px;
@@ -55,6 +55,30 @@
       background: none;
       border: none;
       cursor: pointer;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1470px){
+  .header{
+    font-size: 14px;
+    .langChangeContainer{
+      button{
+        font-size: 14px;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 1338px){
+  .header{
+    .navContainer{
+      a{
+        margin-right: 10px;
+      }
     }
   }
 

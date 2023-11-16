@@ -16,7 +16,7 @@ export const SubPageLayout = ({ object, name, material, photo, description, imag
         <span>{photo}</span>
       </div>
       <div className="generalContainerWithGallery_imagesList">
-        <SlideshowLightbox theme="day" showControls backgroundColor="#FFF" showThumbnails>
+        <SlideshowLightbox theme="day" showControls backgroundColor="#FFF" showThumbnails className="generalContainerWithGallery_imagesList_sliderContainer">
           {images.map(imgSrc => (
             <img src={imgSrc} alt="jewelry collection" />
           ))}

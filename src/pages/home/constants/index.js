@@ -9,7 +9,7 @@ export const homeConfig = [
   },
   {
     imgSrc: Jewelry,
-    route: RoutesNames.JEWELRY_PIECES,
+    route: RoutesNames.JEWELRY,
     alt: 'Bracelet Health nut girl',
   },
   {
