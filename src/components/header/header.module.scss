@@ -7,22 +7,22 @@
   width: 100%;
   z-index: 10;
   background: $bgWhite;
-  padding: 16px 0;
-  font-size: 12px;
+  padding: 12px 0;
+  font-size: 13px;
 
   .logoContainer {
-    max-height: 34px;
+    max-height: 50px;
     width: 51%;
 
     .logoIcon {
       //visibility: hidden;
-      height: 21px;
+      height: 34px;
       margin-right: 10px;
-      max-height: 21px;
+      max-height: 34px;
     }
 
     .logoBogeira {
-      height: 15px;
+      height: 24px;
     }
 
   }
@@ -64,10 +64,10 @@
 
 @media screen and (max-width: 1470px){
   .header{
-    font-size: 12px;
+    font-size: 13px;
     .langChangeContainer{
       button{
-        font-size: 12px;
+        font-size: 13px;
       }
 
     }

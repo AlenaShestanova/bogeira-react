@@ -11,7 +11,7 @@
 
     .imgWrap {
       width: 49%;
-      height: 661px;
+      height: 580px;
       transition: .8s cubic-bezier(0.25, 0.11, 0.38, 0.94);
       overflow: hidden;
 
@@ -23,7 +23,7 @@
       }
 
       &:hover {
-        width: calc(50% + 333px);
+        width: calc(49% + 250px);
 
         .img {
           transform: scale(1,1);
@@ -38,10 +38,10 @@
 
     &_imgContainer {
       .imgWrap {
-        height: 600px;
+        height: 500px;
 
         &:hover {
-          width: calc(50% + 250px);
+          width: calc(49% + 250px);
 
           .img {
             transform: scale(1,1);
@@ -58,14 +58,13 @@
 
     &_imgContainer {
       .imgWrap {
-        height: 500px;
+        height: 450px;
 
         &:hover {
-          width: calc(50% + 200px);
+          width: calc(49% + 200px);
 
           .img {
             transform: scale(1,1);
-            height: 100%;
           }
         }
       }
@@ -83,11 +82,10 @@
 
 
         &:hover {
-          width: calc(50% + 150px);
+          width: calc(49% + 150px);
 
           .img {
             transform: scale(1, 1);
-            height: 100%;
           }
         }
       }
