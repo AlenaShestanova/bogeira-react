@@ -74,8 +74,26 @@
   }
 }
 
-@media screen and (max-width: 1338px){
+@media screen and (max-width: 1350px){
   .header{
+    padding: 10px 0;
+
+    .logoContainer {
+      max-height: 50px;
+      width: 51%;
+
+      .logoIcon {
+        //visibility: hidden;
+        height: 30px;
+        margin-right: 10px;
+        max-height: 30px;
+      }
+
+      .logoBogeira {
+        height: 20px;
+      }
+    }
+
     .navContainer{
       a{
         margin-right: 10px;

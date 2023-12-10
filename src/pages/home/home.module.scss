@@ -72,6 +72,14 @@
   }
 }
 
+@media screen and (max-width: 1350px) {
+  .homeContainer {
+    &_imgContainer {
+      row-gap: 12px;
+    }
+  }
+}
+
 @media screen and (max-width: 1300px){
   .homeContainer {
 
