@@ -19,11 +19,11 @@
     position: -webkit-sticky;
     position: sticky;
     top: 66px;
-    height: calc(100vh - 82px);
+    height: calc(100vh - 66px);
     width: 100%;
     background-image: url('../../assets/images/contacts/image1.png');
     background-repeat: no-repeat;
-    background-position:bottom;
+    background-position:bottom 40% center;
     background-size: cover;
 
   }
