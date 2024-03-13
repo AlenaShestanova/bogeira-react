@@ -6,9 +6,9 @@
     max-width: 70%;
     position: -webkit-sticky;
     position: sticky;
-    top: 300px;
-    height: calc(100vh - 366px);
+    max-height: 360px;
     width: 100%;
+    top: calc(100vh - 48%);
 
     .description {
       margin: 30px 0 64px 0;
@@ -62,3 +62,20 @@
 
 
 
+@media screen and (max-width: 1370px){
+  .touchByContainer {
+
+    .info {
+      max-width: 70%;
+      position: -webkit-sticky;
+      position: sticky;
+      max-height: 360px;
+      width: 100%;
+      top: calc(100vh - 55%);
+
+      .description {
+        margin: 30px 0 64px 0;
+      }
+    }
+  }
+}

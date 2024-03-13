@@ -16,8 +16,8 @@ const About = () => {
       <div className={classes.info}>
         <span className={classes.name}>{whyBogeira}</span>
         <p>{bogeiraInfo}</p>
-        <span className={classes.photo}>{photoAuthor}</span>
         <FactsRender facts={factList} />
+          <span className={classes.photo}>{photoAuthor}</span>
       </div>
       <div className={classes.iraPhoto}></div>
       <Footer isHalfPage={!isMobile} />

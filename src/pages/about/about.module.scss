@@ -4,8 +4,12 @@
   display: grid;
   grid-template-columns: 51% 49%;
 
+
   .info {
     margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 
     .name {
       margin-bottom: 30px;
@@ -14,16 +18,16 @@
 
     p {
       margin: 0;
-      width: 80%;
+      width: 82%;
     }
 
     .photo {
-      display: block;
-      margin: 64px 0;
+      margin:auto 0;
+      color: $grayText;
     }
 
     .factsRendererContainer {
-      margin-bottom: 40px;
+      margin-top:80px;
 
       .factsLabel {
         cursor: pointer;
@@ -47,6 +51,10 @@
         grid-column-gap: 24px;
         transition: max-height 0.5s cubic-bezier(.525, .66, .495, 1.4);
         margin-bottom: 40px;
+      }
+
+      :hover{
+        color:black;
       }
     }
   }
@@ -110,3 +118,10 @@
 
 }
 
+
+@media screen and (max-width: 1370px){
+  .iraPhoto {
+    height: calc(100vh - 60px);
+    top:44px;
+  }
+}
