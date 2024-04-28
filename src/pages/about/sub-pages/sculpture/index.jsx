@@ -1,20 +1,18 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
 import { AboutSubPage } from '../../components/about-sub-page';
 import { useAboutSubPage } from '../../hooks/use-about-sub-page';
-import { Img1, Img2, Img3, Img4 } from '../../../../assets/images/about/sculpture';
-import { TRANSLATION_CONFIG } from '../../../../constants/tranlsation-config';
+import { imageConfig } from './constants';
 
-const Sculpture = () => {
-  const { keyPrefixes } = TRANSLATION_CONFIG.about;
+const Sculpture = props => {
+  const { items, label } = useAboutSubPage(props);
 
-  const images = [Img1, Img2, Img3, Img4];
-
-  const { items, label } = useAboutSubPage({
-    keyPrefix: keyPrefixes.sculpturePage,
-    images,
-  });
-
-  return <AboutSubPage label={label} items={items} />;
+  const itemsWithImg = items.map(item => ({
+    ...item,
+    imgUrl: imageConfig[item.img],
+    imgHoverUrl: imageConfig[item.img_hover],
+  }));
+  return <AboutSubPage label={label} items={itemsWithImg} />;
 };
-export default Sculpture;
+export default withTranslation('about', { keyPrefix: 'sculpture' })(Sculpture);

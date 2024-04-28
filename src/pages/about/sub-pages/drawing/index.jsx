@@ -1,21 +1,18 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
 import { AboutSubPage } from '../../components/about-sub-page';
 import { useAboutSubPage } from '../../hooks/use-about-sub-page';
-import { Img1, Img2, Img3 } from '../../../../assets/images/about/drawing';
-import { TRANSLATION_CONFIG } from '../../../../constants/tranlsation-config';
+import { imageConfig } from './constants';
 
-const Drawing = () => {
-  const { keyPrefixes } = TRANSLATION_CONFIG.about;
+const Drawing = props => {
+  const { items, label } = useAboutSubPage(props);
 
-  const images = [Img1, Img2, Img3];
+  const itemsWithImg = items.map(item => ({
+    ...item,
+    imgUrl: imageConfig[item.img],
+  }));
 
-  console.log(keyPrefixes.drawingPage, 'KEY');
-  const { items, label } = useAboutSubPage({
-    keyPrefix: keyPrefixes.drawingPage,
-    images,
-  });
-
-  return <AboutSubPage label={label} items={items} />;
+  return <AboutSubPage label={label} items={itemsWithImg} />;
 };
-export default Drawing;
+export default withTranslation('about', { keyPrefix: 'drawing' })(Drawing);

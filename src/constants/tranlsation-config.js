@@ -2,43 +2,24 @@ import { productDetailInfoKeys, aboutSubPagesTranslationKeys } from './general-t
 
 export const TRANSLATION_CONFIG = {
   header: {
-    fileName: 'header',
-    keyPrefixes: {
-      header: 'header',
-    },
-    keys: {
-      header: {
-        about: 'about',
-        touch_by_touch: 'touch_by_touch',
-        jewelry_pieces: 'jewelry_pieces',
-        cabinet_objects: 'cabinet_objects',
-        contacts: 'contacts',
-      },
-    },
+    about: 'about',
+    touch_by_touch: 'touch_by_touch',
+    jewelry_pieces: 'jewelry_pieces',
+    cabinet_objects: 'cabinet_objects',
+    contacts: 'contacts',
   },
   about: {
-    fileName: 'about',
-    keyPrefixes: {
-      aboutPage: 'about',
-      paintingPage: 'painting',
-      drawingPage: 'drawing',
-      projectsPage: 'project',
-      sculpturePage: 'sculpture',
-      graphicsPage: 'graphics',
+    aboutPage: {
+      whyBogeira: 'why_bogeira',
+      bogeiraInfo: 'bogeira_info',
+      photoAuthor: 'photo_author',
+      factList: 'fact_list',
     },
-    keys: {
-      aboutPage: {
-        whyBogeira: 'why_bogeira',
-        bogeiraInfo: 'bogeira_info',
-        photoAuthor: 'photo_author',
-        factList: 'fact_list',
-      },
-      paintingPage: aboutSubPagesTranslationKeys,
-      drawingPage: aboutSubPagesTranslationKeys,
-      projectsPage: aboutSubPagesTranslationKeys,
-      sculpturePage: aboutSubPagesTranslationKeys,
-      graphicsPage: aboutSubPagesTranslationKeys,
-    },
+    paintingPage: aboutSubPagesTranslationKeys,
+    drawingPage: aboutSubPagesTranslationKeys,
+    projectsPage: aboutSubPagesTranslationKeys,
+    sculpturePage: aboutSubPagesTranslationKeys,
+    graphicsPage: aboutSubPagesTranslationKeys,
   },
   touch_by_touch: {
     fileName: 'touch_by_touch',

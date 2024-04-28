@@ -6,9 +6,10 @@ import { Footer } from '../../components/footer';
 
 import classes from './about.module.scss';
 import { useResize } from '../../hooks/use-resize';
+import { withTranslation } from 'react-i18next';
 
-const About = () => {
-  const { bogeiraInfo, whyBogeira, photoAuthor, factList } = useAbout();
+const About = props => {
+  const { bogeiraInfo, whyBogeira, photoAuthor, factList } = useAbout(props);
   const { isMobile } = useResize();
 
   return (
@@ -17,11 +18,11 @@ const About = () => {
         <span className={classes.name}>{whyBogeira}</span>
         <p>{bogeiraInfo}</p>
         <FactsRender facts={factList} />
-          <span className={classes.photo}>{photoAuthor}</span>
+        <span className={classes.photo}>{photoAuthor}</span>
       </div>
       <div className={classes.iraPhoto}></div>
       <Footer isHalfPage={!isMobile} />
     </div>
   );
 };
-export default About;
+export default withTranslation('about', { keyPrefix: 'about' })(About);

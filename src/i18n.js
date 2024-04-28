@@ -3,6 +3,27 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
+import { translationRU, translationEN } from './locales';
+
+const resources = {
+  en: {
+    header: translationEN.HeaderEN,
+    about: translationEN.AboutEN,
+    touch_by_touch: translationEN.TouchByTouchEN,
+    cabinet: translationEN.CabinetEN,
+    jewelry: translationEN.JeweleryEN,
+    footer: translationEN.FooterEN,
+  },
+  ru: {
+    header: translationRU.HeaderRU,
+    about: translationRU.AboutRU,
+    touch_by_touch: translationRU.TouchByTouchRU,
+    cabinet: translationRU.CabinetRU,
+    jewelry: translationRU.JeweleryRU,
+    footer: translationRU.FooterRU,
+  },
+};
+console.log(resources, 'resources');
 i18n
   // load translation using http -> see /public/locales
   // learn more: https://github.com/i18next/i18next-http-backend
@@ -16,6 +37,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
+    resources,
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default

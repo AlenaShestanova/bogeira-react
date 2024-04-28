@@ -14,9 +14,9 @@ export const AboutSubPage = ({ label, items }) => {
     <>
       {!isMobile && <BackToAboutBtn label={label} />}
       <div className={classes.photosGrid}>
-        {items.map(({ text, img }) => (
-          <PhotoCard img={img} text={text} />
-        ))}
+        {items.map(({ label, imgUrl, imgHoverUrl }) => {
+          return <PhotoCard imgUrl={imgUrl} text={label} imgHoverUrl={imgHoverUrl} />;
+        })}
       </div>
       <Footer />
     </>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { withTranslation } from 'react-i18next';
 
 import { useLocation } from 'react-router-dom';
 import { ImgCard } from './components/img-card';

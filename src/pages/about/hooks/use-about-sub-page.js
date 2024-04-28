@@ -1,24 +1,17 @@
-import { useTranslation } from 'react-i18next';
-
-import { TRANSLATION_CONFIG } from '../../../constants/tranlsation-config';
 import { aboutSubPagesTranslationKeys } from '../../../constants/general-translation-keys';
 
-export const useAboutSubPage = ({ keyPrefix, images }) => {
-  const { fileName } = TRANSLATION_CONFIG.about;
-
-  const { t } = useTranslation(fileName, { keyPrefix });
-
+export const useAboutSubPage = props => {
   const { label: labelText, photoDescriptions } = aboutSubPagesTranslationKeys;
 
-  const descriptions = t(photoDescriptions, { returnObjects: true });
-  const label = t(labelText);
+  const descriptions = props.t(photoDescriptions, { returnObjects: true });
 
-  const items = Array.isArray(descriptions)
-    ? descriptions.map((item, index) => ({
-        text: item,
-        img: images[index],
-      }))
-    : [];
+  const label = props.t(labelText);
+
+  let items = [];
+
+  if (Array.isArray(descriptions)) {
+    items = descriptions;
+  }
 
   return { items, label };
 };

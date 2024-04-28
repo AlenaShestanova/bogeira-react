@@ -72,10 +72,24 @@
   "sculpture": {
     "label": "Скульптура",
     "photo_descriptions": [
-      "Обнаженная натура с драпировкой, глина, 2020",
-      "Портрет «Кузнец», гипс, 2019",
-      "Портрет, глина, 2020",
-      "Купидон (копия), гипс, 2019"
+      {
+      "label": "Обнаженная натура с драпировкой, глина, 2020",
+      "img": "/src/assets/images/about/sculpture/image1.png",
+      "img_hover": "src/assets/images/about/sculpture/image1Hover.png"
+      },
+      {
+        "label": "Портрет «Кузнец», гипс, 2019",
+        "img": "/src/assets/images/about/sculpture/image2.png",
+        "img_hover": "src/assets/images/about/sculpture/image2Hover.png"
+      },
+      {
+        "label": "Портрет, глина, 2020",
+        "img": "/src/assets/images/about/sculpture/image3.png"
+      },
+      {
+        "label": "Купидон (копия), гипс, 2019",
+        "img": "/src/assets/images/about/sculpture/image4.png"
+      }
     ]
   },
   "graphics": {

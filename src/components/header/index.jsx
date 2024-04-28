@@ -1,8 +1,9 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
 import { useResize } from '../../hooks/use-resize';
 import { MobileHeader } from './mobile/';
-import { DesktopHeader } from './desktop';
+import DesktopHeader from './desktop';
 
 export const Header = () => {
   const { isMobile } = useResize();

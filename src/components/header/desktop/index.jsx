@@ -8,9 +8,10 @@ import Bogeira from '../../../assets/images/bogeira.svg';
 import { EN_LANGUAGE, RU_LANGUAGE } from '../../../constants/languages';
 
 import { useHeader } from '../hooks/use-header';
+import { withTranslation } from 'react-i18next';
 
-export const DesktopHeader = () => {
-  const { navItems, handleChangeLanguage } = useHeader();
+const DesktopHeader = props => {
+  const { navItems, handleChangeLanguage } = useHeader(props);
 
   return (
     <header className={classes.header}>
@@ -32,3 +33,4 @@ export const DesktopHeader = () => {
     </header>
   );
 };
+export default withTranslation('header')(DesktopHeader);

@@ -2,17 +2,15 @@ import { useTranslation } from 'react-i18next';
 
 import { TRANSLATION_CONFIG } from '../../../constants/tranlsation-config';
 
-export const useAbout = () => {
-  const { fileName, keys, keyPrefixes } = TRANSLATION_CONFIG.about;
-
-  const { t } = useTranslation(fileName, { keyPrefix: keyPrefixes.aboutPage });
-
-  const { whyBogeira, bogeiraInfo, photoAuthor, factList } = keys.aboutPage;
+export const useAbout = props => {
+  const {
+    aboutPage: { whyBogeira, bogeiraInfo, photoAuthor, factList },
+  } = TRANSLATION_CONFIG.about;
 
   return {
-    whyBogeira: t(whyBogeira),
-    bogeiraInfo: t(bogeiraInfo),
-    photoAuthor: t(photoAuthor),
-    factList: t(factList, { returnObjects: true }),
+    whyBogeira: props.t(whyBogeira),
+    bogeiraInfo: props.t(bogeiraInfo),
+    photoAuthor: props.t(photoAuthor),
+    factList: props.t(factList, { returnObjects: true }),
   };
 };
