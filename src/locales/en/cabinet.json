@@ -1,0 +1,69 @@
+{
+  "cabinet": [
+    {
+      "route": "/cabinet_objects/goblet",
+      "object": "Goblet",
+      "name": "Schiele",
+      "material": "Brass, glass, 2019"
+    },
+    {
+      "route": "/cabinet_objects/paper_knife",
+      "object": "Paper knife",
+      "name": "",
+      "material": "Brass, lazurite, 2018"
+    },
+    {
+      "route": "/cabinet_objects/sepia",
+      "object": "Cassolette",
+      "name": "Sepia",
+      "material": "Copper, silver-plating, 2018"
+    },
+    {
+      "route": "/cabinet_objects/goblet_kazan",
+      "object": "Goblet",
+      "name": "Kazan",
+      "material": "Brass, gold-plating, patina, 2018"
+    },
+    {
+      "route": "/cabinet_objects/plate",
+      "object": "Decorative plate",
+      "name": "Ultima thule",
+      "material": "Brass, silver-plating, gold-plating, patina, 2017"
+    }
+  ],
+  "goblet": {
+    "object": "Goblet",
+    "name": "Schiele",
+    "material": "Brass, glass, 2019",
+    "description": "Kazan is a millenary multicultural city. The goblet named after Kazan is entirely handmade raising, as well as an ancient kazan (copper vessel) is the symbol of the city. Gold-plating and patina of the piece stand for treasure ancientness. And ornamental elements are indicative of the four winds.",
+    "photo": "Photo: Max Nesterov"
+  },
+  "paper_knife": {
+    "object": "Paper knife",
+    "name": "",
+    "material": "Brass, lazurite, 2018",
+    "description": "Imagery and mystery of the Assyrian art have been impressing me for a long stretch of time. Its cuneiform characters are ornamental and precise. This system of signs is the starting point of creating of this jewelry piece. The assyriologist and reader of Higher School of Economics Ilya Archipov helped me to understand the meaning of some symbols. He suggested several different options to choose from, and I went for the clearest and the simplest one. The shape of the paper knife is stylized cuneiform GÍR, which is a figure of a knife and is translated likewise. In my opinion nowadays a paper knife is a symbol of opening a letter, a text and knowledge hidden from the others’ eyes.",
+    "photo": "Photo: Max Nesterov, Irina Bogolyubova"
+  },
+  "sepia": {
+    "object": "Cassolette",
+    "name": "Sepia",
+    "material": "Copper, silver-plating, 2018",
+    "description": "In Russian language the word “cuttle-fish” sounds like “karakatitsa”. Being informally a coarse word, it means somewhat awkward and clumsy. This goes against my awareness of this beautiful creature. Indeed, this is the most amazing and one of the smartest marine animals. I prefer to call it in the manner of the Latin language - sepia.",
+    "photo": "Photo: Max Nesterov"
+  },
+  "goblet_kazan": {
+    "object": "Goblet",
+    "name": "Kazan",
+    "material": "Brass, gold-plating, patina, 2018",
+    "description": "Kazan is a millenary multicultural city. The goblet named after Kazan is entirely handmade raising, as well as an ancient kazan (copper vessel) is the symbol of the city. Gold-plating and patina of the piece stand for treasure ancientness. And ornamental elements are indicative of the four winds.",
+    "photo": "Photo: Max Nesterov"
+  },
+  "plate": {
+    "object": "Decorative plate",
+    "name": "Ultima thule",
+    "material": "Brass, silver-plating, gold-plating, patina, 2017",
+    "description": "Waking dream of faraway and uncharted world. When I was a kid (and even now, at times), I read long science fiction books. Frequently they depictured other planets’ imaginary nature, which stood in stark contrast to ours, but inherently it was of similar structure. The brass decorative plate with split-level etching is an artistic vision of alien flora.",
+    "photo": "Photo: Max Nesterov"
+  }
+}
