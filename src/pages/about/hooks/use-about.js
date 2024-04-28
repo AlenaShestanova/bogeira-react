@@ -1,5 +1,3 @@
-import { useTranslation } from 'react-i18next';
-
 import { TRANSLATION_CONFIG } from '../../../constants/tranlsation-config';
 
 export const useAbout = props => {
