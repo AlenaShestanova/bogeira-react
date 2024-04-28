@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { Footer } from '../../components/footer';
-import { contactsList } from './constants/contacts-list';
+import { useResize } from '../../hooks/use-resize';
+import { contactsList } from './constants';
 
 import classes from './contacts.module.scss';
-import { useResize } from '../../hooks/use-resize';
 
 const Contacts = () => {
   const { isMobile } = useResize();

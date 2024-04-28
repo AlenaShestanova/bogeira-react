@@ -1,20 +1,15 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
 import { Img1, Img2 } from '../../../../assets/images/cabinet-objects/cabinet-objects-items/plate';
 import { useSubPages } from '../../../../hooks/use-sub-pages';
 import { SubPageLayout } from '../../../../components/sub-page-layout';
-import { TRANSLATION_CONFIG } from '../../../../constants/tranlsation-config';
 
-const Plate = () => {
-  const { keyPrefixes, fileName } = TRANSLATION_CONFIG.cabinet;
-
+const Plate = props => {
   const images = [Img1, Img2];
 
-  const data = useSubPages({
-    translationFile: fileName,
-    keyPrefix: keyPrefixes.platePage,
-  });
+  const data = useSubPages(props);
 
   return <SubPageLayout images={images} {...data} />;
 };
-export default Plate;
+export default withTranslation('cabinet', { keyPrefix: 'plate' })(Plate);

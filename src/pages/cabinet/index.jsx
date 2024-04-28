@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 
 import { Footer } from '../../components/footer';
 import { useCabinet } from './hooks/use-cabinet';
 import { useResize } from '../../hooks/use-resize';
 
-const Cabinet = () => {
-  const { items } = useCabinet();
+const Cabinet = props => {
+  const { items } = useCabinet(props);
   const { isMobile } = useResize();
 
   return (
@@ -25,4 +26,4 @@ const Cabinet = () => {
     </div>
   );
 };
-export default Cabinet;
+export default withTranslation('cabinet')(Cabinet);

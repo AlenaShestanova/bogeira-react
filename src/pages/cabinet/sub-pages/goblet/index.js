@@ -1,4 +1,5 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
 import {
   Img1,
@@ -7,18 +8,12 @@ import {
 } from '../../../../assets/images/cabinet-objects/cabinet-objects-items/goblet';
 import { useSubPages } from '../../../../hooks/use-sub-pages';
 import { SubPageLayout } from '../../../../components/sub-page-layout';
-import { TRANSLATION_CONFIG } from '../../../../constants/tranlsation-config';
 
-const Goblet = () => {
-  const { keyPrefixes, fileName } = TRANSLATION_CONFIG.cabinet;
-
+const Goblet = props => {
   const images = [Img1, Img2, Img3];
 
-  const data = useSubPages({
-    translationFile: fileName,
-    keyPrefix: keyPrefixes.gobletPage,
-  });
+  const data = useSubPages(props);
 
   return <SubPageLayout images={images} {...data} />;
 };
-export default Goblet;
+export default withTranslation('cabinet', { keyPrefix: 'goblet' })(Goblet);

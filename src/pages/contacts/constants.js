@@ -1,4 +1,4 @@
-import { EMAIL } from '../../../constants/email';
+import { EMAIL } from '../../constants/email';
 
 export const contactsList = [
   {

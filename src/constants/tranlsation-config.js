@@ -22,21 +22,14 @@ export const TRANSLATION_CONFIG = {
     graphicsPage: aboutSubPagesTranslationKeys,
   },
   touch_by_touch: {
-    fileName: 'touch_by_touch',
-    keyPrefixes: {
-      touch_by_touch: 'touch_by_touch',
-    },
     keys: {
-      touch_by_touch: {
-        name: 'name',
-        material: 'material',
-        description: 'description',
-        photo: 'photo',
-      },
+      name: 'name',
+      material: 'material',
+      description: 'description',
+      photo: 'photo',
     },
   },
   jewelry: {
-    fileName: 'jewelry',
     keyPrefixes: {
       jewelryPage: 'jewelry',
       aquariusPage: 'aquarius',

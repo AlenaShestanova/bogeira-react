@@ -2,15 +2,14 @@ import { useTranslation } from 'react-i18next';
 
 import { productDetailInfoKeys } from '../constants/general-translation-keys';
 
-export const useSubPages = ({ translationFile, keyPrefix }) => {
-  const { t } = useTranslation(translationFile, { keyPrefix });
+export const useSubPages = props => {
   const { name, material, description, photo, object } = productDetailInfoKeys;
 
   return {
-    name: t(name),
-    material: t(material),
-    description: t(description),
-    photo: t(photo),
-    object: t(object),
+    name: props.t(name),
+    material: props.t(material),
+    description: props.t(description),
+    photo: props.t(photo),
+    object: props.t(object),
   };
 };

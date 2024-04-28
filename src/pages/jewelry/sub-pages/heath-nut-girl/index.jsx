@@ -1,4 +1,5 @@
 import React from 'react';
+import { withTranslation } from 'react-i18next';
 
 import {
   Img1,
@@ -8,18 +9,12 @@ import {
 } from '../../../../assets/images/jewelry/jewelry-items/health-nut-girl';
 import { useSubPages } from '../../../../hooks/use-sub-pages';
 import { SubPageLayout } from '../../../../components/sub-page-layout';
-import { TRANSLATION_CONFIG } from '../../../../constants/tranlsation-config';
 
-const HealthNutGirl = () => {
-  const { keyPrefixes, fileName } = TRANSLATION_CONFIG.jewelry;
-
+const HealthNutGirl = props => {
   const images = [Img1, Img2, Img3, Img4];
 
-  const data = useSubPages({
-    translationFile: fileName,
-    keyPrefix: keyPrefixes.health_nut_girl,
-  });
+  const data = useSubPages(props);
 
   return <SubPageLayout images={images} {...data} />;
 };
-export default HealthNutGirl;
+export default withTranslation('jewelry', { keyPrefix: 'health_nut_girl' })(HealthNutGirl);

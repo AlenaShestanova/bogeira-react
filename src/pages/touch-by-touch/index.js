@@ -1,5 +1,6 @@
 import React from 'react';
 import { SlideshowLightbox } from 'lightbox.js-react';
+import { withTranslation } from 'react-i18next';
 
 import { Footer } from '../../components/footer';
 import { useTouchByTouch } from './hooks/use-touch-by-touch';
@@ -7,8 +8,8 @@ import { useTouchByTouch } from './hooks/use-touch-by-touch';
 import classes from './touch-by-touch.module.scss';
 import { useResize } from '../../hooks/use-resize';
 
-const TouchByTouch = () => {
-  const { images, name, description, photo, material } = useTouchByTouch();
+const TouchByTouch = props => {
+  const { images, name, description, photo, material } = useTouchByTouch(props);
   const { isMobile } = useResize();
 
   return (
@@ -32,4 +33,4 @@ const TouchByTouch = () => {
   );
 };
 
-export default TouchByTouch;
+export default withTranslation('touch_by_touch')(TouchByTouch);
