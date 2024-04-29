@@ -3,7 +3,7 @@ import { withTranslation } from 'react-i18next';
 
 import { useAbout } from './hooks/use-about';
 import { FactsRender } from './components/facts-render';
-import { Footer } from '../../components/footer';
+import Footer from '../../components/footer';
 import { useResize } from '../../hooks/use-resize';
 
 import classes from './about.module.scss';

@@ -4,7 +4,6 @@
 
   .info {
     max-width: 70%;
-    position: -webkit-sticky;
     position: sticky;
     max-height: 360px;
     width: 100%;
@@ -41,23 +40,30 @@
     flex-direction: column;
     grid-template-columns:none;
     margin-bottom: 90px;
+    margin-top:40px!important;
 
     .info {
-      max-width: 100%;
-      position: static;
-      width: 100%;
+      max-width: 100%!important;
+      width: 100% !important;
+      position: relative!important;
       margin-bottom: 64px;
-      height: 100%;
 
       .description {
         margin: 24px 0;
       }
     }
+
+    .imagesListGrid{
+      img {
+        order: 1;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
   }
 
-  footer {
-    bottom: 32px !important;
-  }
+
+
 }
 
 
@@ -67,7 +73,6 @@
 
     .info {
       max-width: 70%;
-      position: -webkit-sticky;
       position: sticky;
       max-height: 360px;
       width: 100%;

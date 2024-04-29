@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { RoutesNames } from '../../../routes/routes-names';
 import { TRANSLATION_CONFIG } from '../../../constants/tranlsation-config';
+import { EN_LANGUAGE, RU_LANGUAGE } from '../../../constants/languages';
 
 export const useHeader = props => {
   const navigate = useNavigate();
@@ -11,6 +12,14 @@ export const useHeader = props => {
 
   const handleChangeLanguage = lng => {
     props.i18n.changeLanguage(lng);
+  };
+
+  const setRULanguage = () => {
+    props.i18n.changeLanguage(RU_LANGUAGE);
+  };
+
+  const setENLanguage = () => {
+    props.i18n.changeLanguage(EN_LANGUAGE);
   };
 
   const navItems = [
@@ -44,7 +53,8 @@ export const useHeader = props => {
 
   return {
     navItems,
-    handleChangeLanguage,
+    setRULanguage,
+    setENLanguage,
     language,
     handleGoBack,
   };

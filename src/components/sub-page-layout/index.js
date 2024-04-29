@@ -1,7 +1,8 @@
-import { Footer } from '../footer';
-import { useResize } from '../../hooks/use-resize';
-import { SlideshowLightbox } from 'lightbox.js-react';
 import React from 'react';
+import { SlideshowLightbox } from 'lightbox.js-react';
+
+import Footer from '../footer';
+import { useResize } from '../../hooks/use-resize';
 
 export const SubPageLayout = ({ object, name, material, photo, description, images }) => {
   const { isMobile } = useResize();
@@ -16,7 +17,13 @@ export const SubPageLayout = ({ object, name, material, photo, description, imag
         <span>{photo}</span>
       </div>
       <div className="generalContainerWithGallery_imagesList">
-        <SlideshowLightbox theme="day" showControls backgroundColor="#FFF" showThumbnails className="generalContainerWithGallery_imagesList_sliderContainer">
+        <SlideshowLightbox
+          theme="day"
+          showControls
+          backgroundColor="#FFF"
+          showThumbnails
+          className="generalContainerWithGallery_imagesList_sliderContainer"
+        >
           {images.map(imgSrc => (
             <img src={imgSrc} alt="jewelry collection" />
           ))}

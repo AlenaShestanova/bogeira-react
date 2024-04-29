@@ -11,7 +11,7 @@ import { useHeader } from '../hooks/use-header';
 import { withTranslation } from 'react-i18next';
 
 const DesktopHeader = props => {
-  const { navItems, handleChangeLanguage } = useHeader(props);
+  const { navItems, setRULanguage, setENLanguage } = useHeader(props);
 
   return (
     <header className={classes.header}>
@@ -26,8 +26,7 @@ const DesktopHeader = props => {
           </NavLink>
         ))}
         <div className={classes.langChangeContainer}>
-          <button onClick={() => handleChangeLanguage(RU_LANGUAGE)}>РУС</button>/
-          <button onClick={() => handleChangeLanguage(EN_LANGUAGE)}>EN</button>
+          <button onClick={setRULanguage}>РУС</button>/<button onClick={setENLanguage}>EN</button>
         </div>
       </div>
     </header>

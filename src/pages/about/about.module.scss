@@ -28,6 +28,7 @@
 
     .factsRendererContainer {
       margin-top:80px;
+      width: 82%;
 
       .factsLabel {
         cursor: pointer;
@@ -120,8 +121,11 @@
 
 
 @media screen and (max-width: 1370px){
-  .iraPhoto {
-    height: calc(100vh - 60px);
-    top:44px;
+  .aboutContainer {
+
+    .iraPhoto {
+      height: calc(100vh - 60px);
+      top:44px;
+    }
   }
 }

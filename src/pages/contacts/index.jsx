@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Footer } from '../../components/footer';
+import Footer from '../../components/footer';
 import { useResize } from '../../hooks/use-resize';
 import { contactsList } from './constants';
 

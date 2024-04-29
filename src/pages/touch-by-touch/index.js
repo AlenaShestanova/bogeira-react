@@ -2,7 +2,7 @@ import React from 'react';
 import { SlideshowLightbox } from 'lightbox.js-react';
 import { withTranslation } from 'react-i18next';
 
-import { Footer } from '../../components/footer';
+import Footer from '../../components/footer';
 import { useTouchByTouch } from './hooks/use-touch-by-touch';
 
 import classes from './touch-by-touch.module.scss';

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { withTranslation } from 'react-i18next';
 
 import { RoutesNames } from '../../../routes/routes-names';
 import Logo from '../../../assets/images/logo-icon.svg';
@@ -10,8 +11,8 @@ import { useHeader } from '../hooks/use-header';
 
 import classes from '../header.module.scss';
 
-export const MobileHeader = () => {
-  const { navItems, handleChangeLanguage, language, handleGoBack } = useHeader();
+const MobileHeader = props => {
+  const { navItems, setENLanguage, setRULanguage, language, handleGoBack } = useHeader(props);
   const { pathname } = useLocation();
 
   const isHomePage = pathname === RoutesNames.HOME;
@@ -32,9 +33,9 @@ export const MobileHeader = () => {
         </div>
         <div className={classes.langChangeContainer}>
           {language === RU_LANGUAGE ? (
-            <button onClick={() => handleChangeLanguage(EN_LANGUAGE)}>EN</button>
+            <button onClick={setENLanguage}>EN</button>
           ) : (
-            <button onClick={() => handleChangeLanguage(RU_LANGUAGE)}>РУС</button>
+            <button onClick={setRULanguage}>РУС</button>
           )}
         </div>
       </div>
@@ -50,3 +51,4 @@ export const MobileHeader = () => {
     </header>
   );
 };
+export default withTranslation('header')(MobileHeader);

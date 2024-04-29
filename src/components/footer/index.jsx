@@ -1,19 +1,16 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 
 import { EMAIL } from '../../constants/email';
 import classes from './footer.module.scss';
-import { TRANSLATION_CONFIG } from '../../constants/tranlsation-config';
+import { useResize } from '../../hooks/use-resize';
 
-export const Footer = ({ isHalfPage, className }) => {
-  const { fileName, keyPrefixes, keys } = TRANSLATION_CONFIG.footer;
-
-  const { t } = useTranslation(fileName, { keyPrefix: keyPrefixes.footer });
-  const { ira_name } = keys.footer;
-
+const Footer = ({ isHalfPage, className, ...props }) => {
   const classNames = `${classes.footer} ${className} ${isHalfPage && classes.halfPage}`;
 
-  const name = t(ira_name);
+  const name = props.t('ira_name');
+
+  const { isMobile } = useResize();
 
   return (
     <footer className={classNames}>
@@ -22,3 +19,4 @@ export const Footer = ({ isHalfPage, className }) => {
     </footer>
   );
 };
+export default withTranslation('footer')(Footer);

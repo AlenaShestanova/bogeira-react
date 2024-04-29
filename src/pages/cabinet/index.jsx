@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
-import { Footer } from '../../components/footer';
+import Footer from '../../components/footer';
 import { useCabinet } from './hooks/use-cabinet';
 import { useResize } from '../../hooks/use-resize';
 

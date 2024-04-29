@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ImgCard } from './components/img-card';
-import { Footer } from '../../components/footer';
+import Footer from '../../components/footer';
 import { homeConfig } from './constants';
 import { useResize } from '../../hooks/use-resize';
 
