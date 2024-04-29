@@ -10,10 +10,6 @@ export const useHeader = props => {
   const { about, touch_by_touch, cabinet_objects, contacts, jewelry_pieces } =
     TRANSLATION_CONFIG.header;
 
-  const handleChangeLanguage = lng => {
-    props.i18n.changeLanguage(lng);
-  };
-
   const setRULanguage = () => {
     props.i18n.changeLanguage(RU_LANGUAGE);
   };

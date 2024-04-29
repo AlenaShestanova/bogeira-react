@@ -6,7 +6,7 @@ import { RoutesNames } from '../../../routes/routes-names';
 import Logo from '../../../assets/images/logo-icon.svg';
 import Bogeira from '../../../assets/images/bogeira.svg';
 import BackIcon from '../../../assets/images/back-icon.svg';
-import { EN_LANGUAGE, RU_LANGUAGE } from '../../../constants/languages';
+import { RU_LANGUAGE } from '../../../constants/languages';
 import { useHeader } from '../hooks/use-header';
 
 import classes from '../header.module.scss';

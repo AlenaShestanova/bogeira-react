@@ -1,5 +1,3 @@
-import { useTranslation } from 'react-i18next';
-
 import { productDetailInfoKeys } from '../constants/general-translation-keys';
 
 export const useSubPages = props => {

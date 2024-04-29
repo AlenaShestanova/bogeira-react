@@ -1,5 +1,3 @@
-import { useTranslation } from 'react-i18next';
-
 import { Img1, Img2, Img3, Img6, Img7, Img5, Img4 } from '../../../assets/images/jewelry';
 import { TRANSLATION_CONFIG } from '../../../constants/tranlsation-config';
 

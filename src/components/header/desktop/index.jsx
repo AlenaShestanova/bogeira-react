@@ -5,7 +5,6 @@ import classes from '../header.module.scss';
 import { RoutesNames } from '../../../routes/routes-names';
 import Logo from '../../../assets/images/logo-icon.svg';
 import Bogeira from '../../../assets/images/bogeira.svg';
-import { EN_LANGUAGE, RU_LANGUAGE } from '../../../constants/languages';
 
 import { useHeader } from '../hooks/use-header';
 import { withTranslation } from 'react-i18next';

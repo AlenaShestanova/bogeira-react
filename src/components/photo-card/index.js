@@ -1,5 +1,4 @@
 import classes from './photo-card.module.scss';
-import { useState } from 'react';
 import { WithHoverImg } from './partials/with-hover-img';
 
 export const PhotoCard = ({ imgUrl, text, imgHoverUrl }) => {

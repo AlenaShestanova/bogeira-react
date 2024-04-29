@@ -10,8 +10,6 @@ const Footer = ({ isHalfPage, className, ...props }) => {
 
   const name = props.t('ira_name');
 
-  const { isMobile } = useResize();
-
   return (
     <footer className={classNames}>
       <span>{name}</span>
