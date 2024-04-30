@@ -19,7 +19,9 @@ const Cabinet = props => {
             <div>{name}</div>
             <div>{material}</div>
           </div>
-          <img src={imgSrc} alt={name} />
+          <div className="generalContainerWithSubPages_item_imgContainer">
+            <img src={imgSrc} alt={name} />
+          </div>
         </NavLink>
       ))}
       <Footer isHalfPage={!isMobile} />
