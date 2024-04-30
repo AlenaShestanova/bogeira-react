@@ -86,7 +86,7 @@ body {
   .generalContainerWithSubPages {
     display: grid;
     row-gap: 8px;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 
     &_item {
       display:flex;
@@ -114,14 +114,14 @@ body {
     flex-direction: column;
     grid-template-columns:none;
     margin-bottom: 90px;
-    margin-top:40px;
+    margin-top:20px;
 
     &_info {
       max-width: 100%;
       position: static;
       width: 100%;
-      margin-bottom: 64px;
-      height: 100%;
+      margin-bottom: 24px!important;
+      max-height: 100% !important;
 
 
       &_description {
@@ -131,7 +131,6 @@ body {
 
     &_imagesList {
       overflow: hidden;
-
 
       img:not(:last-child) {
         margin-bottom: 16px;
