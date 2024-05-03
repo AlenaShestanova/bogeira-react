@@ -65,7 +65,7 @@
     top: 66px;
     height: calc(100vh - 82px);
     width: 100%;
-    background-image: url('../../assets/images/about/ira.png');
+    background-image: url('../../assets/images/about/ira2.jpg');
     background-repeat: no-repeat;
     background-position:bottom;
     background-size: cover;
@@ -77,7 +77,6 @@
   .aboutContainer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 90px;
     grid-template-columns: none;
 
     .info {
@@ -89,8 +88,7 @@
       }
 
       .photo {
-        margin-top:10px;
-        margin-bottom: 58px;
+        margin:40px 0;
       }
 
       .factsRendererContainer {
@@ -108,10 +106,13 @@
       background-size: cover;
       max-height: 449px;
       background-position: bottom;
+      width: 100%;
       margin-bottom: 32px;
+
     }
 
     footer {
+      order:3;
       bottom: 32px;
     }
   }

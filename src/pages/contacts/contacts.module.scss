@@ -20,9 +20,9 @@
     top: 66px;
     height: calc(100vh - 76px);
     width: 100%;
-    background-image: url('../../assets/images/contacts/image1.png');
+    background-image: url('../../assets/images/contacts/image2.jpg');
     background-repeat: no-repeat;
-    background-position:bottom 40% center;
+    background-position:bottom 15% center;
     background-size: cover;
 
   }
@@ -43,7 +43,7 @@
   .contactsContainer {
     display: flex;
     flex-direction: column;
-    margin-bottom: 90px;
+    max-height: calc(100vh - 65px);
 
     .info {
       margin:24px 0 40px 0;
@@ -53,12 +53,12 @@
       order: 1;
       position:static;
       background-size: cover;
-      max-height: 519px;
-      background-position: center;
+      width: 100%;
+      margin-bottom: 32px;
     }
 
     footer {
-      bottom: 32px;
+      order:2;
     }
   }
 }
